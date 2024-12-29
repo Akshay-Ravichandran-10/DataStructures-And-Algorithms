@@ -1,4 +1,4 @@
-# [Leetcode 169: Majority Element](https://leetcode.com/problems/majority-element/)
+# [Leetcode 229. Majority Element II](https://leetcode.com/problems/majority-element-ii/)
 
 ## Approaches
 - [Approach 1: Brute Force](#approach-1-brute-force)
