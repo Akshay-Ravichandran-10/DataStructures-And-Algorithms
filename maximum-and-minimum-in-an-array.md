@@ -6,17 +6,18 @@
 
 ### Brute Force Approach
 
-**Intuition:**
+### Intuition:
 
 The problem requires us to find the maximum & minimum element in the array. Using a brute force approach, we can sort the array and return the elements at 0 index & last index of the array.
 
-**Approach:**
+### Approach:
 
 1. Sort the array.
 2. Return the elements at arr[0] & arr[arr.length-1]
 
-**Time Complexity:** O(nlogn) due to sorting.
-**Space Complexity:** O(1) as no extra space is used.
+#### Complexity Analysis:
+- **Time Complexity:** O(nlogn) due to sorting.
+- **Space Complexity:** O(1) as no extra space is used.
 
 ```java
 public class Solution {
@@ -31,11 +32,11 @@ public class Solution {
 
 ### Optimized One Pass Approach
 
-**Intuition:**
+### Intuition:
 
 Instead of sorting the array. We can traverse through the array to find the maximum & minimum element possible.
 
-**Approach:**
+### Approach:
 
 1. Initialize variables for tracking the maximum & minimum element seen so far (`maximum`) and (`minimum`) both initialized to Integer.MIN_VALUE & Integer.MAX_VALUE respectively.
 2. Iterate through the array.
@@ -44,8 +45,9 @@ Instead of sorting the array. We can traverse through the array to find the maxi
    - Update the `minimum` if the current element is less than the `minimum`.
 4. Return `maximum` & `minimum` after processing all elements.
 
-**Time Complexity:** O(n) since we only pass through the array once.
-**Space Complexity:** O(1) as no additional space is required beyond a few variables.
+#### Complexity Analysis:
+- **Time Complexity:** O(n) since we only pass through the array once.
+- **Space Complexity:** O(1) as no additional space is required beyond a few variables.
 
 ```java
 public class Solution {
