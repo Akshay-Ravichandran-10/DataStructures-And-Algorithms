@@ -91,14 +91,12 @@ public int[] secAndThirdLargest(int[] arr) {
           thirdLargest = secLargest;
           secLargest = largest;
           largest = ele;
-        }    
-    
-        if(ele <= largest && ele > secLargest) {
+        }
+        else if(ele <= largest && ele > secLargest) {
           thirdLargest = secLargest;
           secLargest = ele;
         }
-    
-        if(ele <= largest && ele <= secLargest && ele > thirdLargest) thirdLargest = ele;
+        else if(ele <= largest && ele <= secLargest && ele > thirdLargest) thirdLargest = ele;
     }
 
     if(secLargest == Integer.MIN_VALUE) secLargest = -1;
